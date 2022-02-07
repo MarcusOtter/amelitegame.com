@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #222;
+	margin: 0;
+}

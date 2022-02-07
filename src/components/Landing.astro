@@ -1,0 +1,124 @@
+---
+
+---
+<header>
+	<img class="backdrop" src="/assets/img/backdrop.png" alt="" role="presentation"/>
+	<img class="scroll background4" data-rateX="0" data-rateY="8" src="/assets/img/bg4.png" alt="" role="presentation"/>
+	<img class="scroll background3" data-rateX="0" data-rateY="6" src="/assets/img/bg3.png" alt="" role="presentation"/>
+	<img class="scroll background2" data-rateX="0" data-rateY="3" src="/assets/img/bg2.png" alt="" role="presentation"/>
+	<img class="scroll background1" data-rateX="0" data-rateY="1" src="/assets/img/bg1.png" alt="" role="presentation"/>
+	<img class="scroll sun"          data-rateX="0" data-rateY="-4" src="/assets/img/sun.png" alt="" role="presentation"/>
+	<img class="scroll fg"          data-rateX="0" data-rateY="-4" src="/assets/img/fg.png" alt="" role="presentation"/> 
+	<img class="scroll background0" data-rateX="0" data-rateY="-9" src="/assets/img/bg0.png" alt="" role="presentation"/>
+
+
+
+	<!-- <img class="logo" src="/assets/img/amelite-logo.png" alt="" role="presentation"/> -->
+
+	<!-- <h1>Hello!</h1> -->
+
+	<!-- <img class="background" src="/assets/img/landing.png" role="presentation"/>
+	<div>
+		<p>Test content</p>
+	</div>
+	<div class="foreground">
+		<p>weeeee</p>
+	</div> -->
+	
+
+
+
+
+	
+	<!-- <img class="foreground" src="/assets/img/amelite-logo.png" role="presentation"/> -->
+	<!-- <h1>Amelite</h1> -->
+
+	<!-- <img src="/assets/img/amelite-logo.png"/> -->
+
+</header>
+
+<style>
+	header::before {
+
+		/* background-image: url('/assets/img/backdrop.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		content: "";
+		width: 100vw;
+		height: 100vh;
+
+		z-index: -100000; */
+
+	}
+
+	.scroll {
+		position: fixed;
+		object-position: bottom;
+		bottom: 10vh;
+	}
+
+	header {
+		height: 90vh;
+		/* transform-style: preserve-3d; */
+		z-index: -1;
+
+		display: block;
+
+		position: relative;
+		/* display: flex; */
+		/* justify-content: center; */
+		/* align-items: flex-start; */
+	}
+
+	header > img {
+		position: fixed;
+		height: 90vh;
+		width: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+
+	.sun {
+		mix-blend-mode: overlay;
+	}
+
+	.backdrop {
+		/* height: 100%;
+		z-index: -1;
+		position: fixed;
+		width: 100vw;
+		object-fit: cover; */
+	}
+
+	/* .background4 {
+		transform: translateZ(-32px) scale(33);
+	}
+
+	.background3 {
+		transform: translateZ(-8px) scale(9);
+	}
+
+	.background2 {
+		transform: translateZ(-3px) scale(4);
+	}
+
+	.background1 {
+		transform: translateZ(-2px) scale(3);
+	}
+
+	.background0 {
+		transform: translateZ(0) scale(1);
+	}
+
+	.fg {
+		transform: translateZ(-2px) scale(3);
+	} */
+
+
+	.background0 {
+		/* bottom: 10vh; */
+	}
+
+</style>
