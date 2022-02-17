@@ -49,6 +49,11 @@ let title = 'My Astro Site';
 	</style>
 
 	<script type="module">
+		document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+		window.addEventListener('resize', () => {
+			document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+		});
+
 		const targets = document.querySelectorAll(".scroll");
 		// TODO: Only do this on desktop
 		window.addEventListener("scroll", () => {
