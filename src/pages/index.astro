@@ -56,15 +56,15 @@ let title = 'My Astro Site';
 
 		const targets = document.querySelectorAll(".scroll");
 		// TODO: Only do this on desktop
-		// window.addEventListener("scroll", () => {
+		window.addEventListener("scroll", () => {
 
-		// 	const offset = window.scrollY / 10;
+			const offset = window.scrollY / 10;
 
-		// 	targets.forEach(target => {
-		// 		const posY = offset * target.dataset.speed;
-		// 		target.style.transform = `translateY(${posY}px)`;
-		// 	})
-		// });
+			targets.forEach(target => {
+				const posY = offset * target.dataset.speed;
+				target.style.transform = `translateY(${posY}px)`;
+			})
+		});
 	</script>
 </head>
 <body>
