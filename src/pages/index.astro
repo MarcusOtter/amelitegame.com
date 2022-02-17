@@ -43,8 +43,9 @@ let title = 'My Astro Site';
 		.background0 {
 			margin-left: -2ch;
 			margin-top: -100%;
-			width: 100vw;
-			padding-bottom: calc(2ch - 2px); /* not sure why these values exactly but it works :) */
+			/* magical numbers that happen to work :) */
+			width: calc(100% + 4ch);
+			padding-bottom: calc(2ch - 2px); 
 		}
 	</style>
 
