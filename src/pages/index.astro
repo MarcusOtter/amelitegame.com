@@ -37,12 +37,14 @@ let title = 'My Astro Site';
 			background-color: #411733;
 			position: relative;
 			padding: 2ch;
+			padding-top: 0;
 		}
 
 		.background0 {
 			margin-left: -2ch;
 			margin-top: -100%;
 			width: 100vw;
+			padding-bottom: calc(2ch - 2px); /* not sure why these values exactly but it works :) */
 		}
 	</style>
 
