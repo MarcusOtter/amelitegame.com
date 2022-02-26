@@ -10,4 +10,7 @@ html {
 body {
 	background-color: #411733;
 	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size: calc(1rem + 0.25vw);
+	line-height: 1.5;
 }

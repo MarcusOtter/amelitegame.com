@@ -1,0 +1,81 @@
+---
+import Awards from '../components/Awards.astro';
+import SteamButton from '../components/SteamButton.astro';
+import DiscordButton from '../components/DiscordButton.astro';
+
+---
+<main>
+	<img class="background0" src="/assets/img/bg0.webp" alt="" role="presentation"/>
+	<div id="content">
+		<p class="hero">Amelite is a 2D platformer that will challenge your creativity in this new take on a classic genre. Create your own path as the power of drawing platforms is in YOUR hands.</p>
+		<div class="cta">
+			<DiscordButton />
+			<SteamButton />
+		</div>
+		<!-- <iframe src="https://ptb.discord.com/widget?id=888952043048415232&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+		<iframe src="https://store.steampowered.com/widget/1848220/" loading="lazy" frameborder="0" width="646" height="190"></iframe> -->
+		<Awards />
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque vero corrupti labore ut numquam libero enim aperiam, harum animi ducimus accusantium earum, provident quis sunt omnis necessitatibus voluptatem error ipsa ea! Iste ut vitae error itaque corrupti dolorem, magnam quod nam temporibus. Amet sapiente saepe fugiat natus consectetur omnis sit quidem ipsa dolores rerum dicta explicabo, aperiam architecto repellendus facilis possimus. Error, sequi iusto. Qui nesciunt doloremque eveniet, blanditiis voluptas nostrum placeat vitae dolores? Facilis beatae ad dignissimos unde similique, esse non ullam omnis, quasi possimus qui optio fugiat repellendus amet. Tempore exercitationem, voluptate beatae consequuntur repellat repellendus neque recusandae nesciunt itaque dolor delectus sunt odit quis eius quos architecto ab illum sequi rerum sapiente nemo debitis saepe adipisci eveniet? Nihil, vel id exercitationem ea quas, voluptatum vitae est aspernatur repudiandae aliquam dolorem pariatur atque nobis debitis excepturi temporibus nesciunt illum ipsa facilis hic. Eos eaque nobis consequatur illo dolorem voluptatibus, iure ullam beatae veniam nihil, inventore ipsam obcaecati maiores sunt consectetur est culpa cumque. Nam libero, doloremque et minima quos optio aspernatur repudiandae, expedita consequuntur delectus ducimus ipsa. Veniam beatae deleniti praesentium, adipisci debitis, sapiente animi accusantium labore doloremque nesciunt facilis porro earum culpa inventore eligendi blanditiis odit.
+		</p>
+	</div>
+</main>
+
+<style>
+	@font-face {
+		font-family: 'Diablogue';
+		src: url('/assets/fonts/DiablogueRegular.woff2') format('woff2'),
+			url('/assets/fonts/DiablogueRegular.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	.cta {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-bottom: 1rem;
+		/* flex-direction: column; */
+	}
+
+	p {
+		margin: auto;
+		color: #fbf9da;
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	main {
+		background-color: #411733;
+		position: relative;
+		max-width: 1920px;
+		margin: auto;
+		text-align: center;
+		/* font-family: 'Diablogue', sans-serif; */
+		/* font-size: 1.5rem; */
+		/* text-transform: lowercase; */
+	}
+
+	.background0 {
+		margin-top: -100%;
+		width: 100%;
+		padding-bottom: calc(2ch - 4px);
+	}
+
+	.hero {
+		/* font-size: 2rem; */
+		text-align: center;
+	}
+
+	#content {
+		max-width: 80ch;
+		margin: 0 auto;
+		padding: 2ch;
+		padding-top: 0;
+	}
+
+	iframe {
+		margin-bottom: 2ch;
+	}
+</style>
