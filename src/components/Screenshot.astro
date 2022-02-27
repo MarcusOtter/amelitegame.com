@@ -1,0 +1,30 @@
+---
+	export interface Props {
+		id: number;
+	}
+
+	const { id } = Astro.props;
+	const linkUrl = `/assets/img/screenshots/screenshot${id}.jpg`;
+	const thumbUrl = `/assets/img/screenshots/screenshot${id}-thumb.jpg`;
+---
+
+<a href={linkUrl} target="_blank"><img src={thumbUrl} alt="" title="Click to see full image" role="presentation" /></a>
+
+<style>
+	img {
+		width: 100%;
+		margin-bottom: 0.5rem;
+		transition-property: transform;
+		transition-duration: 100ms;
+		transition-timing-function: ease;
+	}
+
+	img:hover {
+		transform: scale(1.025);
+	}
+
+	a {
+		flex-grow: 1;
+		display: inline-block;
+	}
+</style>

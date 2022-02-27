@@ -1,25 +1,47 @@
 ---
 import Awards from '../components/Awards.astro';
 import YouTube from '../components/YouTube.astro';
+import Screenshot from '../components/Screenshot.astro';
 import SteamButton from '../components/SteamButton.astro';
 import DiscordButton from '../components/DiscordButton.astro';
 
 ---
 <main>
-	<img class="background0" src="/assets/img/bg0.webp" alt="" role="presentation" draggable="false"/>
+	<img class="background0" src="/assets/img/parallax/bg0.webp" alt="" role="presentation" draggable="false"/>
+	<!-- <div class="custom-shape-divider-bottom-1645927187">
+		<svg fill="#1E181C" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+			<path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+		</svg>
+	</div> -->
 	<div id="content">
-		<p class="hero"><strong>Amelite</strong> is a <b>2D platformer</b> that will challenge your creativity in this new take on a classic genre. Create your own path as the power of <b>drawing platforms</b> is in <em>YOUR</em> hands.</p>
-		<div class="cta">
-			<DiscordButton />
-			<SteamButton />
-		</div>
-		<!-- <iframe src="https://ptb.discord.com/widget?id=888952043048415232&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-		<iframe src="https://store.steampowered.com/widget/1848220/" loading="lazy" frameborder="0" width="646" height="190"></iframe> -->
-		<YouTube id="u7j7AUfCVrA" alt="test" />
-		<Awards />
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque vero corrupti labore ut numquam libero enim aperiam, harum animi ducimus accusantium earum, provident quis sunt omnis necessitatibus voluptatem error ipsa ea! Iste ut vitae error itaque corrupti dolorem, magnam quod nam temporibus. Amet sapiente saepe fugiat natus consectetur omnis sit quidem ipsa dolores rerum dicta explicabo, aperiam architecto repellendus facilis possimus. Error, sequi iusto. Qui nesciunt doloremque eveniet, blanditiis voluptas nostrum placeat vitae dolores? Facilis beatae ad dignissimos unde similique, esse non ullam omnis, quasi possimus qui optio fugiat repellendus amet. Tempore exercitationem, voluptate beatae consequuntur repellat repellendus neque recusandae nesciunt itaque dolor delectus sunt odit quis eius quos architecto ab illum sequi rerum sapiente nemo debitis saepe adipisci eveniet? Nihil, vel id exercitationem ea quas, voluptatum vitae est aspernatur repudiandae aliquam dolorem pariatur atque nobis debitis excepturi temporibus nesciunt illum ipsa facilis hic. Eos eaque nobis consequatur illo dolorem voluptatibus, iure ullam beatae veniam nihil, inventore ipsam obcaecati maiores sunt consectetur est culpa cumque. Nam libero, doloremque et minima quos optio aspernatur repudiandae, expedita consequuntur delectus ducimus ipsa. Veniam beatae deleniti praesentium, adipisci debitis, sapiente animi accusantium labore doloremque nesciunt facilis porro earum culpa inventore eligendi blanditiis odit.
+		<p class="hero">
+			<strong>Amelite</strong> is a 2D platformer that will challenge your creativity in this new take on a classic genre. Create your own path as the power of drawing platforms is in <em>your</em> hands!
 		</p>
+		<h2>Trailer</h2>
+		<YouTube id="u7j7AUfCVrA" alt="Play video: Amelite trailer" />
+		<SteamButton />
+		<Awards />
+		<h2>About</h2>
+		<p>
+			Find yourself at the bottom of an abandoned and mystical tower, overgrown by dangerous crystals. With the help of a peculiar creature, climb your way to the top through an ever challenging environment, and find your way home. Leap over gaping holes, block incoming projectiles, or wall-jump in tandem with your own walls. Amelite is a game packed with creative challenges, and every player is free to make their own solutions!
+		</p>
+		<h2>The team</h2>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi in reprehenderit quo nemo aspernatur dicta, accusantium quibusdam ad, culpa eius illo similique ipsa cumque?
+		</p>
+		<ul class="socials">
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Instagram</a></li>
+			<DiscordButton />
+		</ul>
+		<h2>Screenshots</h2>
+		<div class="screenshots">
+			<!-- <Screenshot id={1} /> -->
+			<Screenshot id={2} />
+			<Screenshot id={3} />
+			<Screenshot id={4} />
+			<Screenshot id={5} />
+		</div>
 	</div>
 </main>
 
@@ -35,17 +57,25 @@ import DiscordButton from '../components/DiscordButton.astro';
 
 	p {
 		margin: auto;
-		color: #fbf9da;
 		margin-bottom: 1.5rem;
 		text-align: left;
 	}
 
+	h2 {
+		text-transform: uppercase;
+		margin-top: 2em;
+		margin-bottom: 0.25em;
+		font-weight: 300;
+		font-size: 1.25em;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+
 	main {
-		background-color: #411733;
+		background-color: #1e181c;
 		position: relative;
 		max-width: 1920px;
 		margin: auto;
-		text-align: center;
 	}
 
 	.background0 {
@@ -57,15 +87,12 @@ import DiscordButton from '../components/DiscordButton.astro';
 	}
 
 	.hero {
+		margin-top: 1rem;
 		text-align: center;
 	}
 
-	.cta {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		margin-bottom: 2rem;
-		/* flex-direction: column; */
+	.hero strong {
+		font-size: 1.2em;
 	}
 
 	#content {
@@ -75,7 +102,15 @@ import DiscordButton from '../components/DiscordButton.astro';
 		padding-top: 0;
 	}
 
-	iframe {
-		margin-bottom: 2ch;
+	.socials {
+		text-align: left;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.screenshots {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
 	}
 </style>

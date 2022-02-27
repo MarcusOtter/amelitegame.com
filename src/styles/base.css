@@ -8,14 +8,21 @@ html {
 }
 
 body {
-	background-color: #411733;
+	/* #411733 */
+	background-color: #1e181c;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	font-size: calc(1rem + 0.25vw);
 	line-height: 1.5;
+	color: #fbf9da;
+	hyphens: auto;
+}
+
+a {
+	color: inherit;
 }
 
 ::selection {
 	background-color: #fcdfb0;
-	color: #222;
+	color: #411733;
 }

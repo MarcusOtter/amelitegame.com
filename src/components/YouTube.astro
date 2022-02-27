@@ -6,7 +6,7 @@ export interface Props {
 
 const { id, alt } = Astro.props;
 
-const style = `background-image: url('/public/assets/img/trailer-img.png');`;
+const style = `background-image: url('/assets/img/trailer-img.png');`;
 const url = `https://youtube.com/watch?v=${id}`;
 
 ---
@@ -18,13 +18,19 @@ const url = `https://youtube.com/watch?v=${id}`;
 
 <style>
 	lite-youtube {
-		margin-bottom: 2rem;
-		width: 100%;
 		max-width: unset;
-		display: block;
+		transform: scale(1.2);
+		margin: 3em auto 5.5em auto;
 	}
 
 	lite-youtube::before {
 		display: none;
+	}
+
+	@media screen and (max-width: 1000px) {
+		lite-youtube {
+			transform: unset;
+			margin: 0.75em auto 2.5em auto;
+		}
 	}
 </style>
