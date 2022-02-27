@@ -1,0 +1,79 @@
+<footer>
+	<div class="container">
+		<small>
+			&copy; Sealhorse Studios 2022
+		</small>
+		<nav>
+			<ul>
+				<li><a href="#">Discord</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Instagram</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Press kit</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<style>
+	footer {
+		background-color: #131012;
+		padding: 4em 0;
+	}
+
+	.container {
+		max-width: 80ch;
+		margin: auto;
+		padding: 2ch;
+		background-image: url("/assets/img/sealhorse-studios.png");
+		background-repeat: no-repeat;
+		background-position-x: 95%;
+		background-position-y: 30%;
+	}
+
+	nav {
+		margin-top: 1em;
+		font-size: 1.15rem;
+	}
+
+	small {
+		font-size: 1.15rem;
+	}
+
+	ul {
+		margin-top: 0.25em;
+		display: flex;
+		padding: 0;
+		list-style-type: none;
+		gap: 0.5em;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	nav a {
+		display: inline-block;
+		padding: 0.25em;
+	}
+
+	nav a:hover,
+	nav a:focus {
+		text-decoration: none;
+	}
+
+	@media screen and (max-width: 500px) {
+		.container {
+			background-image: none;
+		}
+
+		footer {
+			text-align: center;
+		}
+
+		ul {
+			justify-content: center;
+		}
+	}
+</style>
