@@ -12,6 +12,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+html, lite-youtube.lyt-activated, .ytp-autohide, video {
+	cursor: url("/assets/img/cursor-default.png"), default !important;
+}
+
+a, lite-youtube, lite-youtube > .lty-playbtn {
+    cursor: url("/assets/img/cursor-pointer.png"), pointer !important;
+}
+
 body {
 	/* #411733 */
 	background-color: #1e181c;

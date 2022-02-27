@@ -5,7 +5,6 @@ lite-youtube {
     contain: content;
     background-position: center center;
     background-size: cover;
-    cursor: pointer;
     max-width: 720px;
 }
 
@@ -46,7 +45,6 @@ lite-youtube > .lty-playbtn {
     width: 68px;
     height: 48px;
     position: absolute;
-    cursor: pointer;
     transform: translate3d(-50%, -50%, 0);
     top: 50%;
     left: 50%;
@@ -70,9 +68,6 @@ lite-youtube .lty-playbtn:focus {
 }
 
 /* Post-click styles */
-lite-youtube.lyt-activated {
-    cursor: unset;
-}
 lite-youtube.lyt-activated::before,
 lite-youtube.lyt-activated > .lty-playbtn {
     opacity: 0;
