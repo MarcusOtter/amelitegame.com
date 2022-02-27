@@ -3,7 +3,7 @@ import Awards from '../components/Awards.astro';
 import YouTube from '../components/YouTube.astro';
 import Screenshot from '../components/Screenshot.astro';
 import SteamButton from '../components/SteamButton.astro';
-import DiscordButton from '../components/DiscordButton.astro';
+import SocialMediaButton from '../components/SocialMediaButton.astro';
 
 ---
 <main>
@@ -30,9 +30,9 @@ import DiscordButton from '../components/DiscordButton.astro';
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi in reprehenderit quo nemo aspernatur dicta, accusantium quibusdam ad, culpa eius illo similique ipsa cumque?
 		</p>
 		<ul class="socials">
-			<li><a href="https://www.facebook.com/amelite.sealhorsestudios/">Facebook</a></li>
-			<li><a href="https://www.instagram.com/amelite.sealhorsestudios/">Instagram</a></li>
-			<DiscordButton />
+			<SocialMediaButton text="Discord" linkUrl="#" iconUrl="/assets/img/discord-logo.svg" />
+			<SocialMediaButton text="Instagram" linkUrl="#" iconUrl="/assets/img/instagram-logo.png" />
+			<SocialMediaButton text="Facebook" linkUrl="#" iconUrl="/assets/img/facebook-logo.png" />
 		</ul>
 		<h2>Screenshots</h2>
 		<div class="screenshots">
@@ -98,6 +98,9 @@ import DiscordButton from '../components/DiscordButton.astro';
 		text-align: left;
 		padding: 0;
 		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		gap: 1em;
 	}
 
 	.screenshots {

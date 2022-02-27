@@ -3,6 +3,11 @@
 	box-sizing: border-box;
 }
 
+a:focus {
+	outline: 2px solid #fff !important;
+	border-radius: 8px;
+}
+
 html {
 	scroll-behavior: smooth;
 }

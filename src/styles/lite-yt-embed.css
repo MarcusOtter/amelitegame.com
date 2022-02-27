@@ -62,6 +62,8 @@ lite-youtube > .lty-playbtn {
 lite-youtube:hover > .lty-playbtn,
 lite-youtube .lty-playbtn:focus {
     filter: none;
+    outline: 2px solid #fff !important;
+	border-radius: 16px;
 }
 
 /* Post-click styles */
