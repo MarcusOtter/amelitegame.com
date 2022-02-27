@@ -1,0 +1,30 @@
+---
+export interface Props {
+	id: string;
+	alt: string;
+}
+
+const { id, alt } = Astro.props;
+
+const style = `background-image: url('/public/assets/img/trailer-img.png');`;
+const url = `https://youtube.com/watch?v=${id}`;
+
+---
+<link rel="stylesheet" href="/node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+<script type="module" src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+<lite-youtube videoid={id} style={style} params="modestbranding=1&rel=0">
+<!-- comment needed here for some reason -->
+</lite-youtube>
+
+<style>
+	lite-youtube {
+		margin-bottom: 2rem;
+		width: 100%;
+		max-width: unset;
+		display: block;
+	}
+
+	lite-youtube::before {
+		display: none;
+	}
+</style>

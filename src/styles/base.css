@@ -14,3 +14,8 @@ body {
 	font-size: calc(1rem + 0.25vw);
 	line-height: 1.5;
 }
+
+::selection {
+	background-color: #fcdfb0;
+	color: #222;
+}

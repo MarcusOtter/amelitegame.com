@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "astro": "^0.22.20"
+  },
+  "dependencies": {
+    "lite-youtube-embed": "^0.2.0"
   }
 }
