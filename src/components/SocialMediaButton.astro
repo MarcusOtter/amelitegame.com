@@ -23,7 +23,7 @@ const { text, iconUrl, linkUrl } = Astro.props;
 		display: flex;
 		align-items: center;
 		width: fit-content;
-		margin-bottom: 1rem;
+		justify-content: space-between;
 	}
 
 	a:hover,
@@ -34,5 +34,11 @@ const { text, iconUrl, linkUrl } = Astro.props;
 	img {
 		height: 1.15em;
 		margin-left: 0.75em;
+	}
+
+	@media screen and (max-width: 500px) {
+		a {
+			width: 100%;
+		}
 	}
 </style>

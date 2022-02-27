@@ -1,21 +1,24 @@
-<div>
-	<img src="/assets/img/awards/best-in-show.webp"      alt="Gotland Game Conference Award: Best in show" />
-	<img src="/assets/img/awards/best-game-feel.webp"    alt="Gotland Game Conference Award: Best game feel" />
-	<img src="/assets/img/awards/best-level-design.webp" alt="Gotland Game Conference Award: Best level design" />
-	<img src="/assets/img/awards/best-presentation.webp" alt="Gotland Game Conference Award: Best presentation" />
+<div class="awards">
+	<div>
+		<img src="/assets/img/awards/best-in-show.webp"      alt="Gotland Game Conference Award: Best in show" />
+		<img src="/assets/img/awards/best-game-feel.webp"    alt="Gotland Game Conference Award: Best game feel" />
+	</div>
+	<div>
+		<img src="/assets/img/awards/best-level-design.webp" alt="Gotland Game Conference Award: Best level design" />
+		<img src="/assets/img/awards/best-presentation.webp" alt="Gotland Game Conference Award: Best presentation" />
+	</div>
 </div>
 
 <style>
-	div {
+	.awards {
 		display: flex;
 		width: 100%;
-		gap: 2rem;
 		justify-content: center;
-		z-index: 10;
 		flex-wrap: wrap;
 	}
 
-	div img {
-		max-width: min(50%, 180px);
+	.awards img {
+		width: calc(12ch + 2vw);
+		margin: 0.5em;
 	}
 </style>
