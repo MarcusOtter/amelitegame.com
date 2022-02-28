@@ -49,13 +49,23 @@ import { SEO } from 'astro-seo';
 	</style>
 
 	<script type="module">
-		// const targets = document.querySelectorAll(".scroll");
-		// window.addEventListener("scroll", () => {
-		// 	const offset = window.scrollY / 10;
-		// 	targets.forEach(target => {
-		// 		target.style.transform = `translateY(${offset * target.dataset.speed}px)`;
-		// 	})
-		// });
+		function enableParallax() {
+			const isMac = navigator.userAgentData?.platform.toLowerCase().includes("mac") || navigator.platform?.toLowerCase().includes("mac");
+			const isChrome = navigator.userAgent.toLowerCase().includes("chrome");
+
+			// Laggy behavior on chrome and mac with parallax scrolling
+			if (isMac && isChrome) return;
+
+			const targets = document.querySelectorAll(".scroll");
+			window.addEventListener("scroll", () => {
+				const offset = window.scrollY / 10;
+				targets.forEach(target => {
+					target.style.transform = `translateY(${offset * target.dataset.speed}px)`;
+				})
+			});
+		}
+		
+		enableParallax();
 	</script>
 
 	<script defer src="/js/lite-yt-embed.js"></script>
