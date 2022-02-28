@@ -20,15 +20,15 @@ import SocialMediaButton from '../components/SocialMediaButton.astro';
 		<p>
 			Find yourself at the bottom of an abandoned and mystical tower, overgrown by dangerous crystals. With the help of a peculiar creature, climb your way to the top through an ever challenging environment, and find your way home. Leap over gaping holes, block incoming projectiles, or wall-jump in tandem with your own walls. Amelite is a game packed with creative challenges, and every player is free to make their own solutions!
 		</p>
-		<h2>The team</h2>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi in reprehenderit quo nemo aspernatur dicta, accusantium quibusdam ad, culpa eius illo similique ipsa cumque?
-		</p>
 		<ul class="socials">
 			<SocialMediaButton text="Discord" linkUrl="#" iconUrl="/img/discord-logo.svg" />
 			<SocialMediaButton text="Instagram" linkUrl="https://www.instagram.com/amelite.sealhorsestudios/" iconUrl="/img/instagram-logo.png" />
 			<SocialMediaButton text="Facebook" linkUrl="https://www.facebook.com/amelite.sealhorsestudios/" iconUrl="/img/facebook-logo.png" />
 		</ul>
+		<h2>The team</h2>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi in reprehenderit quo nemo aspernatur dicta, accusantium quibusdam ad, culpa eius illo similique ipsa cumque?
+		</p>
 		<h2>Screenshots</h2>
 		<div class="screenshots">
 			<Screenshot id={2} />
@@ -36,6 +36,7 @@ import SocialMediaButton from '../components/SocialMediaButton.astro';
 			<Screenshot id={4} />
 			<Screenshot id={5} />
 		</div>
+		<SteamButton />
 	</div>
 </main>
 
@@ -101,7 +102,8 @@ import SocialMediaButton from '../components/SocialMediaButton.astro';
 	.screenshots {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1em;
-		margin-top: 1em;
+		gap: 0.5em;
+		margin: 1em auto 3em auto;
+		justify-content: center;
 	}
 </style>

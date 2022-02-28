@@ -22,10 +22,8 @@ import Main from '../components/Main.astro';
 		const targets = document.querySelectorAll(".scroll");
 		window.addEventListener("scroll", () => {
 			const offset = window.scrollY / 10;
-
 			targets.forEach(target => {
-				const posY = offset * target.dataset.speed;
-				target.style.transform = `translateY(${posY}px)`;
+				target.style.transform = `translateY(${offset * target.dataset.speed}px)`;
 			})
 		});
 	</script>

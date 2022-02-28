@@ -5,7 +5,7 @@
 
 	const { id } = Astro.props;
 	const linkUrl = `/img/screenshots/screenshot${id}.jpg`;
-	const thumbUrl = `/img/screenshots/screenshot${id}-thumb.jpg`;
+	const thumbUrl = `/img/screenshots/screenshot${id}-thumb.png`;
 ---
 
 <a href={linkUrl} target="_blank"><img src={thumbUrl} alt="" title="Click to see full image" role="presentation" /></a>
@@ -18,16 +18,11 @@
 		transition-duration: 100ms;
 		transition-timing-function: ease;
 		border-radius: 8px;
-		max-width: 480px;
+		max-width: 360px;
+		object-fit: cover;
 	}
 
 	img:hover {
 		transform: scale(1.025);
-	}
-
-	a {
-		flex-grow: 1;
-		display: inline-block;
-		text-align: center;
 	}
 </style>
