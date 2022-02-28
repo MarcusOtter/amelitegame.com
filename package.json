@@ -1,5 +1,5 @@
 {
-  "name": "@example/starter",
+  "name": "amelitegame.com",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "astro": "^0.22.20"
   },
   "dependencies": {
+    "astro-seo": "^0.4.2",
     "lite-youtube-embed": "^0.2.0"
   }
 }
