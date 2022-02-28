@@ -4,8 +4,8 @@
 	}
 
 	const { id } = Astro.props;
-	const linkUrl = `/assets/img/screenshots/screenshot${id}.jpg`;
-	const thumbUrl = `/assets/img/screenshots/screenshot${id}-thumb.jpg`;
+	const linkUrl = `/img/screenshots/screenshot${id}.jpg`;
+	const thumbUrl = `/img/screenshots/screenshot${id}-thumb.jpg`;
 ---
 
 <a href={linkUrl} target="_blank"><img src={thumbUrl} alt="" title="Click to see full image" role="presentation" /></a>
