@@ -1,0 +1,69 @@
+---
+
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Amelite - 404</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/png" href="/favicon-40x40.png" />
+
+	<style global>
+		@import "../styles/base.css";
+	</style>
+
+	<script defer data-domain="amelitegame.com" src="/js/script.js"></script>
+	<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="/assets/img/404.png" alt="" role="presentation" />
+			<h1>Page not found</h1>
+		</header>
+		
+		<a href="/">Go back to Amelite homepage</a>
+	</div>
+	<script>plausible("404",{ props: { path: document.location.pathname } });</script>
+</body>
+</html>
+
+<style>
+	body {
+		height: 100vh;
+		text-align: center;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		font-size: calc(1.5rem + 0.5vw);
+		gap: 1em;
+		padding: 2ch;
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1em;
+		flex-wrap: wrap;
+	}
+
+	h1 {
+		line-height: 1;
+	}
+
+	img {
+		width: 96px;
+	}
+
+	@media screen and (max-width: 1000px) {
+
+	}
+</style>
