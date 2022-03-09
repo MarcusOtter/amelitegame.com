@@ -26,8 +26,19 @@ import SocialMediaButton from '../components/SocialMediaButton.astro';
 		</ul>
 		<h2>The team</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium atque nesciunt beatae eos quidem sed ex reiciendis, tempore rerum sequi mollitia itaque assumenda ducimus, ad corrupti obcaecati laudantium quibusdam tenetur voluptatibus quisquam ullam nam? Laborum corporis est dolor a eos ut esse hic accusantium fuga explicabo, vitae, nesciunt ullam!
+			We are a team of eight passionate Game Design students at Campus Gotland, plus our talented music guy from Stockholm. Amelite started out as a university project and received a lot of praise from teachers, as well as winning 4 awards at the Gotland Game Conference 2021. The extremely positive reception of the game was more than we could have ever hoped for, and it encouraged the entire team to keep developing and publishing it. After one year of balancing our studies with this project we're ecstatic to finally share it with the world!
 		</p>
+		<ul class="team">
+			<li>Amanda Östman</li>
+			<li>Cédric Le Therisien</li>
+			<li>Erik Börjesson</li>
+			<li>Fabian Larsson</li>
+			<li>Frida Björnfot</li>
+			<li>Oliver Lincke</li>
+			<li>Pontus Canholm</li>
+			<li>Sabina Hallmén</li>
+			<li>Sander Wellmar</li>
+		</ul>
 		<h2>Screenshots</h2>
 		<div class="screenshots">
 			<Screenshot id={2} />
@@ -88,6 +99,18 @@ import SocialMediaButton from '../components/SocialMediaButton.astro';
 		margin: 0 auto;
 		padding: 2ch;
 		padding-top: 0;
+	}
+
+	ul.team {
+		display: flex;
+		padding: 0;
+		list-style: none;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1em 2em;
+	}
+
+	ul.team li {
 	}
 
 	.socials {
