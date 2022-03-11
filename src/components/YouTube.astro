@@ -11,6 +11,10 @@ const { id, alt } = Astro.props;
 <!-- do not remove this comment -->
 </lite-youtube>
 
+<script>
+	document.querySelector("lite-youtube").addEventListener("click", () => plausible("Trailer click"))
+</script>
+
 <style>
 	lite-youtube {
 		max-width: unset;
