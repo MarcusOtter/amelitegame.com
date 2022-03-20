@@ -35,7 +35,8 @@
 		const secondDiff = Math.floor((timeRemaining % 60000) / 1000);
 
 		if (timeRemaining < 0) {
-			countdownSpan.parentElement.style.display = "none";
+			countdownSpan.parentElement.innerText = "Out now on Steam!\n🎉🥳🍾🙌🎈🎆🥂🎇";
+			return;
 		}
 
 		countdownSpan.innerText = dayDiff > 0
