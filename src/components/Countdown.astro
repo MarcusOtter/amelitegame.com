@@ -23,10 +23,13 @@
 		const release = new Date(Date.UTC(2022, 2, 25, 16, 0, 0));
 		const timeRemaining = release - now;
 
-		const hourDiff = Math.floor(timeRemaining / 3600000);
+		const dayDiff = Math.floor(timeRemaining / 86400000);
+		const hourDiff = Math.floor((timeRemaining % 86400000) / 3600000);
 		const minuteDiff = Math.floor((timeRemaining % 3600000) / 60000);
 		const secondDiff = Math.floor((timeRemaining % 60000) / 1000);
 
-		countdownSpan.innerText = `${hourDiff}h ${minuteDiff}m ${secondDiff}s`;
+		countdownSpan.innerText = dayDiff > 0
+			? `${dayDiff}d ${hourDiff}h ${minuteDiff}m ${secondDiff}s`
+			: `${hourDiff}h ${minuteDiff}m ${secondDiff}s`;
 	}
 </script>
