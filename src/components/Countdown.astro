@@ -34,6 +34,10 @@
 		const minuteDiff = Math.floor((timeRemaining % 3600000) / 60000);
 		const secondDiff = Math.floor((timeRemaining % 60000) / 1000);
 
+		if (timeRemaining < 0) {
+			countdownSpan.parentElement.style.display = "none";
+		}
+
 		countdownSpan.innerText = dayDiff > 0
 			? `${dayDiff}d ${hourDiff}h ${minuteDiff}m ${secondDiff}s`
 			: `${hourDiff}h ${minuteDiff}m ${secondDiff}s`;
